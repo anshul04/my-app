@@ -1,0 +1,36 @@
+<div class="login">
+    <br><span class="align">User Signup </span>
+    <form [formGroup]="formSignup" class="label-align">
+        <br><label>
+        First Name : <input type="text" formControlName="firstName">
+        </label>
+        <br><label>
+        Last Name : <input type="text" formControlName="lastName">
+        </label>
+        <br><label>
+        User Email : <input type="email" formControlName="email">
+        </label>
+        <br><label>
+        User Age : <input type="number" formControlName="age">
+        </label>
+        <span formGroupName="address">
+            <br><label>Address Details : </label>
+        <br><label>
+            Address line1 : <input type="text" formControlName="address1">
+        </label>
+        <br><label>
+            Address line2 : <input type="text" formControlName="address2">
+        </label>
+        <br><label>
+            State : <input type="text" formControlName="state">
+        </label>
+        <br><label>
+            Pincode : <input type="text" formControlName="pincode">
+        </label><br>
+        </span>
+        <button type="submit" class="btn" (click)="onSignup()" [disabled]=!formSignup.valid>Submit</button>&nbsp;&nbsp;
+        <button type="reset" class="btn">Reset</button>&nbsp;&nbsp;
+        <button type="cancel" class="btn">Cancel</button>&nbsp;&nbsp;
+        <button (click)="updatePartially()">Update Partially</button>
+    </form>
+</div>

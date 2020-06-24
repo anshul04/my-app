@@ -1,0 +1,14 @@
+.username {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 300px;
+}
+
+.align-icon {
+    display: inline-flex;
+    padding: 50px 0 0 0;
+}
+
+.span1, .span2, .span3 {
+    padding-right: 100px;
+}

@@ -1,0 +1,21 @@
+<div class="toolbar" role="banner">
+  <img
+    width="50"
+    alt="Site Logo"
+    src="assets\images\icon.jpg"
+  />
+  <nav routerLink='home'><span>{{ title }}!</span></nav>
+    <div class="spacer">
+      <div class="card highlight-card card-small align">
+        <span><nav routerLink='login'>Login</nav></span>
+        <span><nav routerLink='signup'>SignUp</nav></span>
+      </div>
+    </div>
+</div>
+
+<div class="content" role="main">
+  <!-- Main buttons -->
+  <!-- <div class="card highlight-card card-small"> </div> -->
+  <!-- <div class="card highlight-card card-small"> </div> -->
+  <router-outlet></router-outlet>
+</div>

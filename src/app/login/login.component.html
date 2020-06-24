@@ -1,0 +1,21 @@
+<h2>Login Form</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" style="background-color:burlywood ;">
+  <div class="imgcontainer">
+    <img src="assets\images\img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" formControlName="userName">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" formControlName="password">
+        
+    <button type="submit" [disabled]=!form.valid>Login</button>
+  </div>
+
+  <div class="container" style="background-color: burlywood;">
+    <button type="button" class="cancelbtn">Cancel</button>
+  </div>
+</form>
