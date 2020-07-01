@@ -1,0 +1,35 @@
+.starter-table {
+    background: url(/assets/images/front.jpeg) no-repeat center center fixed; 
+    background-size: cover;
+    padding: 5px 10px 10px 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+    font-weight: 900;
+  }
+  
+  td, th {
+    /* border: 1px solid darkgoldenrod; */
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* tr:nth-child(even) {
+    background-color: #dddddd;
+  } */
+
+  a,
+  a:visited,
+  a:hover {
+    text-decoration: none;
+    color: saddlebrown;
+  }
+
+  h1 {
+      color: black;
+      font-weight: 900;
+  }

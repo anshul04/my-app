@@ -7,6 +7,7 @@ import { LoginHomeComponent } from './login-home/login-home.component';
 import { StartersComponent } from './starters/starters.component';
 import { MainCourseComponent } from './main-course/main-course.component';
 import { DesertComponent } from './desert/desert.component';
+import { StartersDetailsComponent } from './starters-details/starters-details.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path : 'user-home/starters', component : StartersComponent},
   { path : 'user-home/main-course', component : MainCourseComponent},
   { path : 'user-home/desert', component : DesertComponent},
+  { path : 'user-home/starters/:rname', component : StartersDetailsComponent}
 ];
 
 @NgModule({

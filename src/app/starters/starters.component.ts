@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StartersService } from '../starters.service';
+
 
 @Component({
   selector: 'app-starters',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartersComponent implements OnInit {
 
-  constructor() { }
+  recipes : any;
+
+  constructor(private starterService: StartersService) { }
 
   ngOnInit(): void {
+    this.recipes = this.starterService.getRecipes();
   }
 
 }

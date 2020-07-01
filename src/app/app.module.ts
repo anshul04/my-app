@@ -11,6 +11,8 @@ import { LoginHomeComponent } from './login-home/login-home.component';
 import { StartersComponent } from './starters/starters.component';
 import { MainCourseComponent } from './main-course/main-course.component';
 import { DesertComponent } from './desert/desert.component';
+import { StartersDetailsComponent } from './starters-details/starters-details.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -21,13 +23,15 @@ import { DesertComponent } from './desert/desert.component';
     LoginHomeComponent,
     StartersComponent,
     MainCourseComponent,
-    DesertComponent
+    DesertComponent,
+    StartersDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
