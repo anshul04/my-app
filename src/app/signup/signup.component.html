@@ -1,36 +1,41 @@
-<div class="login">
-    <br><span class="align">User Signup </span>
-    <form [formGroup]="formSignup" class="label-align">
-        <br><label>
-        First Name : <input type="text" formControlName="firstName">
-        </label>
-        <br><label>
-        Last Name : <input type="text" formControlName="lastName">
-        </label>
-        <br><label>
-        User Email : <input type="email" formControlName="email">
-        </label>
-        <br><label>
-        User Age : <input type="number" formControlName="age">
-        </label>
-        <span formGroupName="address">
-            <br><label>Address Details : </label>
-        <br><label>
-            Address line1 : <input type="text" formControlName="address1">
-        </label>
-        <br><label>
-            Address line2 : <input type="text" formControlName="address2">
-        </label>
-        <br><label>
-            State : <input type="text" formControlName="state">
-        </label>
-        <br><label>
-            Pincode : <input type="text" formControlName="pincode">
-        </label><br>
-        </span>
-        <button type="submit" class="btn" (click)="onSignup()" [disabled]=!formSignup.valid>Submit</button>&nbsp;&nbsp;
-        <button type="reset" class="btn">Reset</button>&nbsp;&nbsp;
-        <button type="cancel" class="btn">Cancel</button>&nbsp;&nbsp;
-        <button (click)="updatePartially()">Update Partially</button>
-    </form>
-</div>
+<h2>User SignUp</h2> 
+
+<form [formGroup]="formSignup" style="background-color:burlywood; width: 600px;">
+  <div class="container">
+    <label for="fname"><b>FirstName</b></label>
+    <input type="text" placeholder="Enter FirstName" formControlName="firstName">
+
+    <label for="lname"><b>LastName</b></label>
+    <input type="text" placeholder="Enter LastName" formControlName="lastName">
+
+    <label for="uemail"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" formControlName="email">
+
+    <label for="uage"><b>Age</b></label>
+    <input type="number" placeholder="Enter Age" formControlName="age">
+  </div>
+  <div class="container">
+    <label formGroupName="address"><b>Address Details:</b><br><br>
+
+        <label for="uadd1"><b>Address Line 1</b></label>
+        <input type="text" placeholder="Enter Address Line 1" formControlName="address1">
+    
+        <label for="uadd2"><b>Address Line 2</b></label>
+        <input type="text" placeholder="Enter Address Line 2" formControlName="address2">
+    
+        <label for="ustate"><b>State</b></label>
+        <input type="text" placeholder="State" formControlName="state">
+    
+        <label for="upincode"><b>Pincode</b></label>
+        <input type="number" placeholder="Pincode" minlength="2" maxlength="6" formControlName="pincode">
+            
+        <button type="submit" (click)="onSignup()" [disabled]=!formSignup.valid>SignUp</button>
+    </label>
+  </div>
+
+  <div class="container" style="background-color: burlywood;">
+    <button type="reset" class="cancelbtn">Reset</button> &nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="cancel" class="cancelbtn" (click)="onCancel()">Cancel</button> &nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="cancelbtn" (click)="updatePartially()">Update Partially</button>
+  </div>
+</form>
