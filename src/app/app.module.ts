@@ -12,7 +12,7 @@ import { StartersComponent } from './starters/starters.component';
 import { MainCourseComponent } from './main-course/main-course.component';
 import { DesertComponent } from './desert/desert.component';
 import { StartersDetailsComponent } from './starters-details/starters-details.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [

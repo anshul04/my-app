@@ -8,7 +8,7 @@ export class StartersService {
   starterRecipe : any;
 
   starterRecipesCollection = [
-    {recipeno:1, name:'Noodles'},
+    {recipeno:1, name:'Noodles', time:15},
     {recipeno:2, name:'Manchurian'},
     {recipeno:3, name:'Pizza'},
     {recipeno:4, name:'Sandwich'},
@@ -19,15 +19,6 @@ export class StartersService {
 
   getRecipes() {
     return this.starterRecipesCollection;
-  }
-
-  getRecipeByName(rname:string) {
-    for(let i=0 ; i<this.starterRecipesCollection.length;i++) {
-      if(this.starterRecipesCollection[i].name == rname) {
-      this.starterRecipe = this.starterRecipesCollection[i];
-      return this.starterRecipe;
-      }
-    }
   }
 
 }

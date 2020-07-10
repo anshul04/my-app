@@ -262,3 +262,7 @@
     }
 
   }
+
+  .align {
+    display: inline-flex;
+  }

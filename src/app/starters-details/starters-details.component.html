@@ -1,4 +1,18 @@
 <div>
-    <h1>{{rname}} Recipe </h1><br>
-    <span><b>Ingredients:</b></span>    
+    <h1 class="starter-info">{{rname}} Recipe </h1>
+    <span>
+        <h2>
+            <b>Ingredients:</b>
+            <b style="padding-left:450px;">Prep Time: </b>
+        </h2>
+    </span>
+       
+    <span *ngFor="let r of recipe"><br>
+        <b>
+            {{r.Type}} <br>
+            {{r.Name}} <br>
+            {{r.Type}} <br>
+            {{r.Chef}}
+        </b>
+    </span>
 </div>

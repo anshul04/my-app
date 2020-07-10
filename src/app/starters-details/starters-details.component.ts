@@ -17,7 +17,7 @@ export class StartersDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.rname = params['rname'];
-      this.recipe = this.starterService.getRecipeByName(this.rname);
+      //this.recipe = this.starterService.getRecipeByName(this.rname);
     })
   }
 
